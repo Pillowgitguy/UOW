@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trust Sharing</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="endUser_static/css/endUserUploadUIStyle.css" />
+    <link rel="stylesheet" href="static/css/Style1.css" />
+
+    <link
+      rel="icon"
+      href="static/img/trustsharinglogo.png"
+      type="image/x-icon"
+    />
+    <style>
+      /* Add your custom styles here */
+      .error-message {
+        color: red;
+      }
+      /* Add your CSS styles here */
+      .content h1 {
+        color: blue;
+      }
+
+      h1 {
+        display: inline-block;
+        padding: 10px;
+        border: 4px dashed black;
+        border-radius: 8px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <!-- Sidebar content -->
+      <a href="homePage" class="logo">
+        <i class="bx bx-code-alt"></i>
+        <div class="logo-name"><span>Trust</span>Sharing</div>
+      </a>
+      <ul class="side-menu">
+        <li>
+          <a href="/profileUI"><i class="bx bxs-dashboard"></i>Profile</a>
+        </li>
+        <li>
+          <a href="/uploadUI"><i class="bx bx-store-alt"></i>Upload</a>
+        </li>
+        <li>
+          <a href="/display"><i class="bx bx-store-alt"></i>My Documents</a>
+        </li>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="/logout" id="logoutButton" class="logout">
+            <i class="bx bx-log-out-circle"></i>
+            Logout
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <nav>
+        <!-- Navbar content -->
+        <i class="bx bx-menu"></i>
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="Search..." />
+            <button class="search-btn" type="submit">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </form>
+        <input type="checkbox" id="theme-toggle" hidden />
+        <label for="theme-toggle" class="theme-toggle"></label>
+        <a href="#" class="profile">
+          <img src="static/img/trustsharinglogo.png" alt="Profile Image" />
+        </a>
+      </nav>
+
+      <main>
+        <!-- Main content -->
+        <!-- Add the form for submitting dropdown values -->
+        <form id="dropdownForm">
+          <!-- First dropdown list -->
+          <div>
+            <label for="minshare">Select min share:</label>
+            <select id="minshare" name="minshare">
+              {% for value in range(2, 6) %}
+              <option value="{{ value }}">{{ value }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <!-- Second dropdown list -->
+          <div>
+            <label for="totalshare">Select total share:</label>
+            <select id="totalshare" name="totalshare">
+              {% for value in range(3, 11) %}
+              <option value="{{ value }}">{{ value }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <!-- Third dropdown list for user type -->
+          <div>
+            <label for="usertype">Select user type:</label>
+            <select
+              id="usertype"
+              name="usertype"
+              onchange="handleUserTypeChange()"
+            >
+              <option value="">Select...</option>
+              <option value="non-tech">Non-Tech</option>
+              <option value="tech">Tech</option>
+            </select>
+          </div>
+
+          <!-- Fourth dropdown list for key size -->
+          <div id="keysizeContainer" style="display: none">
+            <label for="keysize">Select key size:</label>
+            <select
+              id="keysize"
+              name="keysize"
+              onchange="updateEncryptionOptions()"
+            >
+              <option value="">Select...</option>
+              <option value="128">128</option>
+              <option value="192">192</option>
+              <option value="256">256</option>
+            </select>
+          </div>
+
+          <!-- Fifth dropdown list for encryption type -->
+          <div id="encryptiontypeContainer" style="display: none">
+            <label for="encryptiontype">Select encryption type:</label>
+            <select
+              id="encryptiontype"
+              name="encryptiontype"
+              onchange="handleEncryptionTypeChange()"
+            >
+              <!-- Block modes will be dynamically populated here -->
+            </select>
+          </div>
+
+          <!-- Sixth dropdown list for block mode -->
+          <div id="blockmodeContainer" style="display: none">
+            <label for="blockMode">Block Mode:</label>
+            <select id="blockMode">
+              <!-- Block modes will be dynamically populated here -->
+            </select>
+          </div>
+
+          <!-- Seventh dropdown list for MAC mode -->
+          <div id="noncesizeContainer" style="display: none">
+            <label for="noncesize">Nonce size :</label>
+            <select id="noncesize" name="noncesize">
+              <option value="">Select...</option>
+              <option value="8">8 (ChaCha20)</option>
+              <option value="12">12 (ChaCha20)</option>
+              <option value="24">24 (xChaCha20)</option>
+            </select>
+          </div>
+          <!-- Eigth dropdown list for MAC mode -->
+          <div id="macmodeContainer" style="display: none">
+            <label for="macmode">Need MAC? :</label>
+            <select id="macmode" name="macmode">
+              <option value="">Select...</option>
+              <option value="Yes-MAC">Yes (Poly1305)</option>
+              <option value="No-MAC">No</option>
+            </select>
+          </div>
+          <!-- Submit button -->
+          <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+        <div id="result"></div>
+        <!-- Upload portion -->
+        <!-- <h1 id="title">Upload your files in the box!</h1> -->
+        <div id="drop-area">
+          <h1>Drag and Drop File Here</h1>
+        </div>
+        <div>
+          <p>Acceptable files: .txt, .docx, .pdf</p>
+          <p>Note: Please drop files only, no folders</p>
+        </div>
+        <script src="{{ url_for('upload.static', filename='js/endUserUploadScript.js') }}"></script>
+        <div class="button-container">
+          <button type="button" onclick="redirectToDisplayUI()">
+            Files Uploaded
+          </button>
+          <button onclick="redirectToHome()">Home</button>
+        </div>
+      </main>
+    </div>
+    <script src="static/js/homePage.js"></script>
+  </body>
+</html>

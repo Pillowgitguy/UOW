@@ -1,0 +1,67 @@
+body.landing-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar-transparent {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-top .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-top .navbar-nav > li > a:hover {
+    color: #ddd;
+}
+
+.parallax-background img {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+.token-download-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px; /* Increased top margin */
+    text-align: center;
+    width: 80%; /* Optional: to control width */
+    margin-left: auto; /* Centering the content */
+    margin-right: auto; /* Centering the content */
+}
+
+.token-download-content h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.token-download-content input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.token-download-content button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.token-download-content button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 10px;
+}

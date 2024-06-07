@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="static/img/trustsharinglogo.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Trust Sharing</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link href="static/css/bootstrap.css" rel="stylesheet" />
+    <link href="static/css/landing-page.css" rel="stylesheet" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body class="landing-page">
+
+    <nav class="navbar navbar-transparent navbar-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="{{ url_for('index') }}">
+                    <div class="logo-container">
+
+                        <div class="brand">
+                            Trust Sharing
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="example">
+                <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="{{ url_for('login_page') }}">
+                            Sign Up
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('login_page') }}">
+                            Sign In
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('tokenredirect_route') }}">
+                            Token
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <i class="fa fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="parallax filter-gradient blue" data-color="blue">
+        <div class="parallax-background">
+            <img src="static/img/secure-file-sharing-26.jpg" >
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 hidden-xs">
+                    <div class="parallax-image">
+                        <!-- Change the image to showcase your file sharing service -->
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-offset-1">
+                    <div class="description">
+                        <h2>Singapore Most Secure File Sharing Service</h2>
+                        <br>
+                        <h5>Experience the best in secure file sharing. Our service ensures the safety and confidentiality of your important documents. Easy-to-use, reliable, and designed to meet your file sharing needs!</h5>
+                        <h6>Share the Trust, Trust Sharing</h6>
+                    </div>
+                    <div class="buttons">
+                        <!-- Update the links for App Store, Google Play, etc. as needed -->
+                       <!-- <a href="http://codedesign.elkind.net/themes/bootstrap-theme-basic-app/">
+                            <button class="btn btn-neutral btn-lg">
+                                <i class="fa fa-lg fa-apple"></i> App Store
+                            </button>
+                        </a>
+                        <a href="http://codedesign.elkind.net/themes/bootstrap-theme-basic-app/">
+                            <button class="btn btn-simple btn-neutral">
+                                <i class="fa fa-lg fa-android"></i>
+                            </button>
+                        </a>
+                        <a href="http://codedesign.elkind.net/themes/bootstrap-theme-basic-app/">
+                            <button class="btn btn-simple btn-neutral">
+                                <i class="fa fa-lg fa-windows"></i>
+                            </button>
+                        -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="section section-features section-no-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 grayblock2">
+                    <div class="card card-blue">
+                        <div class="icon">
+                            <i class="fa fa-lock"></i>
+                        </div>
+                        <div class="text">
+                            <h4>End-to-End Encryption</h4>
+                            <p>Your files are secure with state-of-the-art end-to-end encryption, ensuring maximum privacy and confidentiality for your data.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 grayblock">
+                    <div class="card card-blue">
+                        <div class="icon">
+                            <i class="fa fa-share"></i>
+                        </div>
+                        <h4>Effortless Sharing</h4>
+                        <p>Experience seamless file sharing with colleagues or clients. Our free-to-use platform is designed for easy collaboration and efficient sharing.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 grayblock2">
+                    <div class="card card-blue">
+                        <div class="icon">
+                            <i class="fa fa-shield"></i>
+                        </div>
+                        <h4>Robust Security Measures</h4>
+                        <p>Benefit from advanced security features that protect your files from unauthorized access and ensure robust defense against potential data breaches.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <div class="section section-testimonial">
+            <div class="container">
+                    <h4 class="header-text text-center">What people think</h4>
+                    <div id="carousel-example-generic" class="carousel fade" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item">
+                                <div class="mask">
+                                    <img src="static/img/faces/luffy.png">
+                                </div>
+                                <div class="carousel-testimonial-caption">
+                                        <p>Charles, IT Student</p>
+                                        <h3>"Trust Sharing made my FYP collaboration seamless. It's an essestial tool for protecting our sensitive documents."</h3>
+                                        
+                                </div>
+                            </div>
+                            <div class="item active">
+                                <div class="mask">
+                                    <img src="static/img/faces/chopper.jpg">
+                                </div>
+                                <div class="carousel-testimonial-caption">
+                                        <p>Chopper, Freelancer</p>
+                                        <h3>"I've tried several file sharing services, and this one stands out. It's user-friendly, reliable, and ensures my data is always protected."</h3>
+                                       
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="mask">
+                                    <img src="static/img/faces/solomon-park.jpg">
+                                </div>
+                                <div class="carousel-testimonial-caption">
+                                        <p>Solomon Park, Business Owner</p>
+                                        <h3>"The level of security provided by this app is impressive. I trust it with our confidential files, and it never disappoints."</h3>
+                                       
+                                </div>
+                            </div>
+                        </div>
+                         <ol class="carousel-indicators carousel-indicators-blue">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+            
+            </div>
+        </div>
+    
+        <div class="section section-no-padding">
+            <div class="full-background filter-gradient blue" style="background-image:url('static/img/file-share.jpg'); background-size: cover;">
+                <div class="info">
+                    <h1>Register with us now today for free</h1>
+                    <p>Start sharing now</p> 
+                    <a href="{{ url_for('login_page') }}" class="btn btn-neutral btn-lg">Sign Up</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    
+    <div class="section section-contact">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Contact Trust Sharing Support</h2>
+                    <p>If you have any questions, need assistance, or want to provide feedback, feel free to reach out to our support team.</p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="mailto:peiminsim@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email Support</span></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/peiminsim" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter Support</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/simpm" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook Support</span></a>
+                        </li>
+        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="static/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="static/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+<script src="static/js/bootstrap.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    var big_image;
+    $().ready(function () {
+        responsive = $(window).width();
+
+        if (responsive >= 768) {
+            big_image = $('.parallax-background').find('img');
+            console.log(big_image);
+            $(window).on('scroll', function () {
+                parallax();
+            });
+        }
+
+    });
+
+    var parallax = function () {
+        var current_scroll = $(this).scrollTop();
+
+        oVal = ($(window).scrollTop() / 3);
+        big_image.css('top', oVal);
+    };
+</script>
+<script src="static/js/SmoothScroll.js"></script>
+
+</html>

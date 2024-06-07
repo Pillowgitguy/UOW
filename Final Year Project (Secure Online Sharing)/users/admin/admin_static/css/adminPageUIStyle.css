@@ -1,0 +1,60 @@
+/* Main content styling */
+main {
+    padding: 20px;
+    margin-left: 0px; /* Adjust based on your sidebar width */
+    background-color: #f4f4f4; /* Light grey background for contrast */
+}
+
+/* Table styling */
+main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+main th, main td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd; /* Light grey border for each row */
+}
+
+main th {
+    background-color: #1976d2; /* Blue header background */
+    color: white; /* White text for headers */
+}
+
+main tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra striping for rows */
+}
+
+main tr:hover {
+    background-color: #ddd; /* Hover effect for rows */
+}
+
+/* Update Role button styling */
+main button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #1976d2; /* Matching the header background */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Search and theme toggle alignment */
+main form, main .theme-toggle {
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    main {
+        margin-left: 0; /* Adjust layout for smaller screens */
+        padding: 10px;
+    }
+}

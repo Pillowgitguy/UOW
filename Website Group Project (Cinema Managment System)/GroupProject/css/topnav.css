@@ -1,0 +1,724 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topBanner {
+  background-color: grey;
+  padding: 20px 10px 20px 10px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background: rgb(47, 47, 56);
+  background: radial-gradient(
+    circle,
+    rgb(57, 57, 66) 100%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.mybuttonCSS {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: white;
+  width: 110px;
+  color: #2f2f38;
+  padding: 10px 15px;
+  cursor: pointer;
+
+  font-size: 20px;
+  border-radius: 15px;
+  box-shadow: 6px 6px 10px -4px #cb9b51;
+  text-decoration: none;
+  transition: 0.3s;
+
+  margin-top: 15px;
+}
+
+.mybuttonCSS:hover {
+  background-color: #cb9b51;
+  color: white;
+  box-shadow: none;
+}
+
+.mybuttonCSS a {
+  text-decoration: none;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #f2f2f2;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #2f2f38;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: #cb9b51;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #cb9b51;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.title {
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    #d1902f 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #d1902f 100% /* c08c5b */
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.signup {
+  margin-top: 200px;
+  margin-bottom: 40px;
+  margin-left: 40%;
+}
+
+.signup span {
+  color: #f44336e5;
+}
+
+.sigup-message {
+  max-width: 250px;
+  margin: auto;
+  position: relative;
+  top: 110px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.bold {
+  font-weight: bold;
+}
+
+.center-horizontal {
+  max-width: 200px;
+  margin: auto;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.center-child {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+.table-profile {
+  display: grid;
+  place-items: center;
+  height: 400px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FOR UPDATE PROFILE */
+
+.button {
+  position: relative;
+  left: 200px;
+  top: 10px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  background-color: white;
+  color: #2f2f38;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 95px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border-color: #cb9b51;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.link {
+  color: #cb9b51;
+  font-weight: 500;
+}
+
+.center-link {
+  display: grid;
+  place-items: center;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FOR VIEW MOVIE SESSION TABLE */
+
+.cust-view-movie-session-table {
+  width: 67%;
+  margin: auto;
+}
+
+.cust-view-movie-session-button {
+  position: relative;
+
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  background-color: white;
+  color: #2f2f38;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-color: #cb9b51;
+}
+
+.pre-purchase-fb-link {
+  position: relative;
+  top: 20px;
+  max-width: 230px;
+  margin: auto;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FOR PURCHASE TICKET */
+
+.cust-purchase-ticket-button {
+  position: relative;
+  top: 40px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  background-color: white;
+  color: #2f2f38;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 190px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-color: #cb9b51;
+}
+
+select {
+  position: relative;
+  margin-top: 12px;
+  padding: 3px;
+}
+
+/* line 81 in CustomerPurchaseTicketUI */
+hr {
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.purchase-ticket-message {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.alertError {
+  padding: 20px;
+  background-color: #f44336e5; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+.alertSuccess {
+  padding: 20px;
+  background-color: #23c551d3; /* Green */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: #2f2f38;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FOR PRE PURCHASE FB */
+
+.container-pre-purchase-fb {
+  display: flex;
+}
+
+.fixed-pre-purchase-fb-table {
+  width: 20%;
+  position: relative;
+  left: 400px;
+}
+
+.flex-pre-purchase-fb {
+  flex-grow: 1;
+  margin-left: 700px;
+  margin-top: 200px;
+}
+
+input[type="number"] {
+  position: relative;
+  margin-top: 12px;
+  padding: 3px;
+}
+
+.cust-pre-purchase-fb-button {
+  position: relative;
+  top: 15px;
+  left: 195px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  background-color: white;
+  color: #2f2f38;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-color: #cb9b51;
+}
+
+.pre-purchase-fb-message {
+  margin: 0;
+  position: absolute;
+  top: 67%;
+  right: 22%;
+  transform: translateY(-50%);
+}
+
+.side-link {
+  position: relative;
+  top: 70px;
+  left: 180px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FOR VIEW SUMMARY PURCHASE FB */
+
+.cust-view-summary-table {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.cust-summary-title {
+  color: #cb9b51;
+  margin-left: 395px;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FOR MANAGER MOVIE SESSION */
+
+.cm-view-movie-session-table {
+  width: 69%;
+  margin: auto;
+  text-align: center;
+}
+
+.cm-search-bar {
+  max-width: 20%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 40%;
+}
+
+.cm-search-movie-button {
+  position: relative;
+  left: 15px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  background-color: white;
+  color: #2f2f38;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-color: #cb9b51;
+}
+
+.cm-back-movie-button {
+  position: relative;
+  left: 160px;
+  width: 70px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="email"] {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.cm-view-movie-message {
+  max-width: 250px;
+  position: relative;
+  left: 820px;
+  top: -10px;
+  bottom: 20px;
+}
+
+.cm-create-update-movie {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-left: 35%;
+}
+
+.cm-create-update-movie span {
+  color: #f44336e5;
+}
+
+.cm-update-movie-message {
+  max-width: 250px;
+  position: relative;
+  left: 140px;
+}
+
+.cm-update-movie-message-alert {
+  max-width: 300px;
+  position: relative;
+  left: 790px;
+  top: 20px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FOR MANAGER CINEMA ROOM */
+
+.cm-search-movie-bar {
+  max-width: 20%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 40%;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FOR MANAGER TICKET TYPE */
+
+.cm-tt {
+  margin-left: 600px;
+}
+
+.cm-tt a {
+  text-decoration: none;
+}
+
+.cm-tt-create span {
+  color: #f44336e5;
+}
+
+.cm-tt-create-message {
+  max-width: 350px;
+  margin: auto;
+  margin-top: 65px;
+}
+
+.cm-tt-view {
+  width: 25%;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 745px;
+}
+
+.cm-tt-view-button {
+  position: relative;
+  top: 10px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  background-color: white;
+  color: #2f2f38;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-color: #cb9b51;
+}
+
+.cm-tt-search {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FOR MANAGER FOOD AND DRINK */
+
+.center-cm-fb {
+  max-width: 270px;
+  margin: auto;
+}
+
+.cm-view-fb-table {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  margin-right: 690px;
+}
+
+.cm-view-fb-back {
+  margin-left: 690px;
+  margin-bottom: 30px;
+}
+
+.fixed-cm-update-fb-table {
+  width: 35%;
+  margin: auto;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.flex-cm-update-fb {
+  margin-top: -2550px;
+  margin-left: 1000px;
+}
+
+.cm-update-fb-button {
+  margin-top: 30px;
+  margin-left: 290px;
+}
+
+.flex-cm-update-fb-title {
+  margin-left: 6px;
+}
+
+.cm-suspend-fb-table {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+
+.cm-search-fb-button {
+  margin-left: -15px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FOR USER ADMIN USER ACCOUNT */
+
+.ua-search-ua-bar {
+  max-width: 20%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 42.5%;
+}
+
+.ua-create-ua {
+  max-width: 350px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.ua-create-ua-button {
+  position: relative;
+  top: 40px;
+}
+
+.ua-create-ua-message {
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FOR USER ADMIN USER PROFILE */
+
+.ua-up {
+  margin-left: 630px;
+}
+
+.ua-up a {
+  text-decoration: none;
+}
+
+.ua-up-view {
+  width: 40%;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 600px;
+  text-align: left;
+}
+
+.ua-suspend-up-message {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.ua-up-search {
+  text-align: left;
+  width: 40%;
+  margin: auto;
+  margin-left: 600px;
+}
+
+.ua-up-search-message {
+  max-width: 250px;
+  margin: auto;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FOR CINEMA OWNER */
+
+.co-revenue-button {
+  width: 200px;
+  position: relative;
+  left: 35px;
+  top: 20px;
+}
+
+.co-error {
+  max-width: 250px;
+  margin: auto;
+  margin-top: 300px;
+}
+
+.center-profile {
+  max-width: 200px;
+  margin: auto;
+  position: relative;
+  right: -35px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FOR MULTIPLE CLASSES */
+
+.no-line {
+  text-decoration: none;
+}
+
+.input-no-margin {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.cust-view-movie-session-button:hover,
+.button:hover,
+.cust-purchase-ticket-button:hover,
+.cust-pre-purchase-fb-button:hover,
+.cm-search-movie-button:hover,
+.cm-tt-view-button:hover {
+  background-color: #cb9b51;
+}
+
+.cust-view-movie-session-button span,
+.button span,
+.cust-purchase-ticket-button span,
+.cust-pre-purchase-fb-button span,
+.cm-search-movie-button span,
+.cm-tt-view-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.cust-view-movie-session-button span:after,
+.button span:after,
+.cust-purchase-ticket-button span:after,
+.cust-pre-purchase-fb-button span:after,
+.cm-search-movie-button span:after,
+.cm-tt-view-button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  color: white;
+}
+
+.cust-view-movie-session-button:hover span,
+.button:hover span,
+.cust-purchase-ticket-button:hover span,
+.cust-pre-purchase-fb-button:hover span,
+.cm-search-movie-button:hover span,
+.cm-tt-view-button:hover span {
+  padding-right: 15px;
+  color: white;
+}
+
+.cust-view-movie-session-button:hover span:after,
+.button:hover span:after,
+.cust-purchase-ticket-button:hover span:after,
+.cust-pre-purchase-fb-button:hover span:after,
+.cm-search-movie-button:hover span:after,
+.cm-tt-view-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.login-button {
+  width: 80px;
+  position: relative;
+  top: 5px;
+  bottom: 5px;
+  left: 100px;
+}
+
+.signup-link {
+  position: relative;
+  top: 30px;
+  right: -30px;
+}
+
+.signup-button {
+  position: relative;
+  top: 30px;
+  right: -35px;
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="s2.xml" type="text/xml"?>
+<forecast queryTime="28/04/2022 10:45 AM" queryLocation="Singapore">
+  <weather yyyymmdd="20220411">
+    <year>2022</year>	
+    <month>4</month>
+    <date>11</date>
+    <dayOfWeek>Mon</dayOfWeek> 
+    <overall>Considerable clouds</overall>
+    <overallCode>cloudy</overallCode>
+    <highest>27</highest>
+    <lowest>17</lowest>
+  </weather>
+  <weather yyyymmdd="20220116">
+    <year>2022</year>	
+    <month>1</month>
+    <date>16</date>
+    <dayOfWeek>Sun</dayOfWeek> 
+    <overall>Cloudy with a thunderstorm</overall>
+    <overallCode>thunderstorm</overallCode>
+    <highest>26</highest>
+    <lowest>18</lowest>
+  </weather>
+  <weather yyyymmdd="20220405">
+    <year>2022</year>	
+    <month>4</month>
+    <date>5</date>
+    <dayOfWeek>Tue</dayOfWeek> 
+    <overall>Afternoon shower</overall>
+    <overallCode>rain</overallCode>
+    <highest>22</highest>
+    <lowest>19</lowest>
+  </weather>
+  <weather yyyymmdd="20220409">
+    <year>2022</year>	
+    <month>4</month>
+    <date>9</date>
+    <dayOfWeek>Sat</dayOfWeek> 
+    <overall>A morning shower, then rain</overall>
+    <overallCode>rain</overallCode>
+    <highest>29</highest>
+    <lowest>20</lowest>
+  </weather>
+  <weather yyyymmdd="20220310">
+    <year>2022</year>	
+    <month>3</month>
+    <date>10</date>
+    <dayOfWeek>Thu</dayOfWeek> 
+    <overall>Partly sunny</overall>
+    <overallCode>partlySunny</overallCode>
+    <highest>30</highest>
+    <lowest>21</lowest>
+  </weather>
+  <weather yyyymmdd="20220311">
+    <year>2022</year>	
+    <month>3</month>
+    <date>11</date>
+    <dayOfWeek>Fri</dayOfWeek> 
+    <overall>Plenty of sunshine</overall>
+    <overallCode>sunny</overallCode>
+    <highest>34</highest>
+    <lowest>20</lowest>
+  </weather>
+</forecast>

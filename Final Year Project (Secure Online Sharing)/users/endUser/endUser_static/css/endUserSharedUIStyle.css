@@ -1,0 +1,138 @@
+main {
+    padding: 20px;
+    background-color: #f4f4f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the main content */
+    font-family: Arial, sans-serif;
+    width: 80%; /* Adjust width to not span the entire viewport */
+    overflow-x: auto; /* Allows horizontal scrolling for the entire main content if needed */
+}
+
+main h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: center; /* Center the title for better visual */
+    margin-bottom: 20px;
+}
+
+#fileDetails {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#fileDetails table, #fileDetails .ts-file-details-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto; /* Center tables for consistency */
+}
+
+#fileDetails th, #fileDetails td, #fileDetails .ts-file-details-table th, #fileDetails .ts-file-details-table td {
+    text-align: left; /* Align text to the left for readability */
+    padding: 8px;
+    border: 1px solid #ddd; /* Add border to cells for definition */
+}
+
+#fileDetails th, #fileDetails .ts-file-details-table th {
+    background-color:#1976d2; /* Use a consistent color theme for headers */
+    color: white;
+}
+
+#fileDetails .ts-file-details-table {
+    overflow-x: auto; /* Allows horizontal scrolling within the tokens table */
+    margin-top: 10px; /* Space between file details and tokens table */
+}
+
+#fileDetails .token-with-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure token and button are on opposite ends */
+    flex-wrap: wrap; /* Allow items to wrap in small screens */
+    margin-bottom: 5px;
+}
+
+#fileDetails .token {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    max-width: 70%; /* Prevent the token from occupying full width */
+}
+
+button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    outline: none; /* Remove the outline to enhance appearance */
+    border: 1px solid transparent; /* Add border to maintain the shape */
+}
+
+button:hover {
+    opacity: 0.8; /* Slight visual feedback on hover */
+}
+
+#generateToken,#deleteFile , .ts-button, button[onclick="redirectToHome()"] {
+    margin-top: 10px; /* Ensure spacing between buttons and the rest of the content */
+}
+
+input[type="text"]#receipient_mail {
+    margin-top: 20px; /* Provide spacing above the input field */
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+}
+
+/* Revoked button styles */
+.ts-button {
+    background-color: #f44336; /* Red */
+    min-width: 100px; /* Ensure uniform width */
+}
+
+.ts-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Generate New Token button styles */
+#generateToken {
+    background-color: #28a745; /* Green */
+}
+
+#generateToken:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+#deleteFile {
+    background-color: #f44336; /* Red */
+}
+
+#deleteFile:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+button[onclick="redirectToHome()"]:hover {
+    background-color: #138496; /* Darker info color on hover */
+}
+
+/* Additional styles for visual cues */
+input[type="text"]#receipient_mail:focus {
+    border-color: #007bff; /* Highlight focus on input */
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    main {
+        width: 95%; /* Increase width for smaller screens for better use of space */
+    }
+
+    #fileDetails .token-with-button {
+        justify-content: center; /* Center items on smaller screens */
+    }
+
+    #fileDetails .token {
+        margin-bottom: 5px; /* Provide spacing when wrapped */
+    }
+}

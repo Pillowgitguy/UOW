@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Sharing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Style1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('admin.static', filename='css/adminPageUIStyle.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/trustsharinglogo.png') }}" type="image/x-icon">
+    <style>
+        /* Add your custom styles here */
+        .error-message {
+            color: red;
+        }
+        /* Add your CSS styles here */
+        .content h1{
+          color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+  <nav>
+    <!-- Navbar content -->
+    <div class="sidebar">
+      <!-- Sidebar content -->
+      <a href="/admin/adminPage" class="logo">
+          <i class="bx bx-code-alt"></i>
+          <div class="logo-name"><span>Trust</span>Sharing</div>
+      </a>
+      <ul class="side-menu">
+          <li>
+              <a href="/admin/adminPage"><i class="bx bx-store-alt"></i>Admin</a>
+          </li>
+      </ul>
+      <ul class="side-menu">
+          <li>
+              <a href="/logout" id="logoutButton" class="logout">
+                  <i class="bx bx-log-out-circle"></i>
+                  Logout
+              </a>
+          </li>
+      </ul>
+  </div>
+
+  
+  <div class="content">
+    <nav>
+      <!-- Navbar content -->
+      <i class="bx bx-menu"></i>
+      <form action="#">
+          <div class="form-input">
+              <input type="search" placeholder="Search...">
+              <button class="search-btn" type="submit">
+                  <i class="bx bx-search"></i>
+              </button>
+          </div>
+      </form>
+      <input type="checkbox" id="theme-toggle" hidden>
+      <label for="theme-toggle" class="theme-toggle"></label>
+      <a href="#" class="profile">
+          <img src="{{ url_for('static', filename='img/trustsharinglogo.png') }}">
+          
+      </a>
+  </nav>
+
+
+    <main>
+        <h2>User Information</h2>
+        <table id="usersTable">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Date Joined</th>
+                    <th>Last Login</th>
+                    <th>Role</th>
+                    <th>Update Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Users will be loaded here dynamically -->
+            </tbody>
+        </table>
+    </main>
+    
+    
+   
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="{{ url_for('admin.static', filename='js/adminPageScript.js') }}"></script>
+  <script src="{{ url_for('static', filename='/js/homePage.js') }}"></script>
+</body>
+
+

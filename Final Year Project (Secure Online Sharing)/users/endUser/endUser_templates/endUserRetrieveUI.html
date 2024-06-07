@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Sharing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="static/css/Style1.css">
+    <link rel="stylesheet" href="endUser_static/css/endUserRetreiveUIStyle.css" />
+    <link rel="icon" href="static/img/trustsharinglogo.png" type="image/x-icon">
+    <style>
+        /* Add your custom styles here */
+        .error-message {
+            color: red;
+        }
+        /* Add your CSS styles here */
+        .content h1{
+          color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+  <nav>
+    <!-- Navbar content -->
+    <div class="sidebar">
+      <!-- Sidebar content -->
+      <a href="homePage" class="logo">
+          <i class="bx bx-code-alt"></i>
+          <div class="logo-name"><span>Trust</span>Sharing</div>
+      </a>
+      <ul class="side-menu">
+          <li>
+              <a href="/profileUI"><i class="bx bxs-dashboard"></i>Profile</a>
+          </li>
+          <li>
+              <a href="/uploadUI"><i class="bx bx-store-alt"></i>Upload</a>
+          </li>
+          <li>
+              <a href="/display"><i class="bx bx-store-alt"></i>My Documents</a>
+          </li>
+      </ul>
+      <ul class="side-menu">
+          <li>
+              <a href="/logout" id="logoutButton" class="logout">
+                  <i class="bx bx-log-out-circle"></i>
+                  Logout
+              </a>
+          </li>
+      </ul>
+  </div>
+
+  
+  <div class="content">
+    <nav>
+      <!-- Navbar content -->
+      <i class="bx bx-menu"></i>
+      <form action="#">
+          <div class="form-input">
+              <input type="search" placeholder="Search...">
+              <button class="search-btn" type="submit">
+                  <i class="bx bx-search"></i>
+              </button>
+          </div>
+      </form>
+      <input type="checkbox" id="theme-toggle" hidden>
+      <label for="theme-toggle" class="theme-toggle"></label>
+      <a href="#" class="profile">
+          <img src="static/img/trustsharinglogo.png" alt="Profile Image">
+      </a>
+  </nav>
+
+
+    <main>
+      <h1>Retrieve Files</h1>
+    <form id="fileForm" action="/submit" method="post">
+      <label for="fileDropdown">Select a File:</label>
+      <select id="fileDropdown" name="selectedFile">
+        {% for file in files %}
+        <option value="{{ file[0] }}">{{ file[1] }}</option>
+        {% endfor %}
+      </select>
+    
+      <button type="submit">Click to retrieve the file</button>
+    </form>
+    </main>
+    
+    
+   
+  </div>
+  
+  <script src="{{ url_for('upload.static', filename='js/endUserRetrieveScript.js') }}"></script>
+  <script src="static/js/homePage.js"></script>
+</body>
+

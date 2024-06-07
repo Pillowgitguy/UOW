@@ -1,0 +1,82 @@
+/* Main content area styling */
+main {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    min-height: 400px; /* New addition */
+    overflow: auto; /* New addition */
+}
+
+/* Form styling */
+main form div {
+    margin-bottom: 15px;
+}
+
+main label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+main select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    max-width: 100%; /* Ensures select doesn't overflow */
+}
+
+/* Drop area styling */
+main #drop-area {
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+}
+
+main #drop-area h1 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Button styling */
+main button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+main button:hover {
+    background-color: #0056b3;
+}
+
+/* Button container styling */
+main .button-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap */
+    justify-content: center; /* Center align */
+    gap: 10px; /* Spacing between buttons */
+    margin-top: 20px;
+}
+
+/* Result styling */
+main #result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}

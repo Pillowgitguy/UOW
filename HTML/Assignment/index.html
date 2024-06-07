@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<head>
+<title>Assignment 1</title> <!--Title page-->
+<style>
+    table tr#Row1{background-color: lightblue;}
+    img{
+        float: left;
+        margin-right: 50px;
+    }
+
+    .errorMessage{
+        color: red;
+    }
+</style>
+</head>
+<body>
+<table border="1">
+    <tr id="Row1">
+        <th colspan="3">CSIT128: Assignment 1</th>
+        <th>Group G1T03</th>
+    </tr>
+    <tr>
+        <td rowspan="3">
+            Student number / <br> Name / Email
+        </td>
+        <td>
+            7432628
+        </td>
+        <td>
+            Foo Whye Keat
+        </td>
+        <td>
+            wkf866@uowmail.edu.au
+        </td>
+    </tr>
+    <tr>
+        <td>
+            7436099
+        </td>
+        <td>
+            Liew Yong Qi
+        </td>
+        <td>
+            yql834@uowmail.edu.au
+        </td>
+    </tr>
+    <tr>
+        <td>
+            7432434
+        </td>
+        <td>
+            Chua Tian Sheng
+        </td>
+        <td>
+            tsc050@uowmail.edu.au
+        </td>
+    </tr>
+</table>
+
+<h2>Part 2: Hello World program in different languages</h2>
+<ul>
+    <li><a href="#C++">C++</a></li>
+    <li><a href="#C#">C#</a></li>
+    <li><a href="#Python">Python</a></li>
+    <li><a href="#HTML">HTML</a></li>
+</ul>
+<hr>
+<h3 id="C++">C++</h3>
+<img src="Pictures/CPP.png" alt="An image of C++" >
+<pre>#include &lt;isostream&gt;
+    void main(){
+             count &lt;&lt; "Hello World!" &lt;&lt; endl;
+    }
+</pre>
+<br><br><br>
+<hr>
+<h3 id="C#">C#</h3>
+<img src="/Pictures/CS.png" style="position: relative;" alt="An image of C#" height="140" width="220">
+<pre style="margin: auto;">
+    using System;
+    
+    class Program 
+    {
+            static void Main()
+            {
+                    Console.WriteLine("Hello World!");
+            }
+    }
+                    </pre>
+<hr>
+<h3 id="Python">Python</h3>
+<img src="/Pictures/Python-Language.jpg" style="position: relative;" alt="An image of Python" height="200">
+<pre style="margin: auto;">
+    # Hello World program in Python
+    print ("Hello World!") 
+</pre>
+<br><br><br><br><br><br><br>
+<hr>
+<h3 id="HTML">HTML</h3>
+<img src="/Pictures/HTML.jpg" alt="An image of html" height="200">
+<pre>
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt; Hello &lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    Hello World!
+    &lt;/body&gt;
+    &lt;/html&gt;
+</pre>
+<br><br><br>
+<h1>Part 3: University policies and services</h1>
+<dl>
+    <dt> PLAGIARISM</dt>
+    <dd>Plagiarism is treated seriously. If we suspect any work is copied, all students involved are likely to receive zero <br>
+        for the entire assignment.Plagiarism has led to students being explled from the University. <br>
+        Please click <a href="https://www.uow.edu.au/student/support-services/learning-development/plagiarism/">here</a> to read more about Plagiarism</dd>
+    <dt><br>ACADEMIC CONSIDERATION</dt>
+    <dd>We know that life isn't perfect and there may be a time when you can't hand in an assignment on time, or make it <br>
+    to class or an exam. If you find yourself in a situation like this, you may be eligible for Academic Consideration. <br>
+    Academic Consideration is designed to help students when they are sick, injured, or where a serious, unplanned situtation has occurred that has affected their ability to study. <br>
+    Please click <a href="https://www.uow.edu.au/student/admin/academic-consideration/portal/">here</a> to read more about Academic Consideration.</dd>
+    <dt><br>STUDENT SUPPORT ADVISERS</dt>
+    <dd>If you have an issue or problem that is affecting your study, then the Student Support Advisers may be able to <br>
+    help. There are Student Support Advisers available to assist students who are studying at all UOW Campuses and <br>
+    in all UOW Faculties. <br>
+    Please click <a href="https://www.uow.edu.au/student/support-services/advisers/">here</a> to read more about Student Support Advisers<br><br>
+    Student Support Adviser Contact details for Engineering and Information Sciences: <br>
+    <table border="1">
+        <tr>
+            <td><b>Ann-Maree Smith</b><br>
+            Bld 40:133, Wollongong <br>
+            Campues <br>
+            (02) 4221 4714 <br>
+            Mon - Fri <br>
+            ams@uow.edu.au</td>
+            <td><b>Mitz Perez</b><br>
+            Bld 4:105, Wollongong <br>
+            Campus <br>
+            (02) 4221 3833 <br>
+            Mon - Fri <br>
+            mperez@uow.edu.au</td>
+        </tr>
+    </table></dd>
+    <dt><br>DISABLILITY SERVICES</dt>
+    <dd>Disability Services provide advice and support for students with disablity or health condition. Our aim is to <br>
+    ensure students with a disability realise their full academic potential. We also provide support for those who are <br>
+    the primary carers for those with a medical condition or disability. <br>
+    Please click <a href="https://www.uow.edu.au/student/support-services/disability/">here</a> to read more about Disability Services.</dd>
+</dl>
+<br>
+<form action="https://translate.google.com" method="get" onSubmit= "return validate()">
+
+    <table border="0">
+        <tr>
+            <td>Name:</td> <!--TextBox for user to input name-->
+            <td><input id="name" type="text" size="30">
+                <span id="nameError" class="errorMessage"></span> <!--Error text if user didn't input any thing-->
+            </td>
+        </tr>
+        <tr>
+            <!--Current date-->
+            <td>Current Date:</td>
+            <td><input type="text" id="currentDate" size="30" readonly /> </td>
+        </tr>
+        <tr>
+            <!--TextBox for user to input module code-->
+            <td>Module code:</td>
+            <td><input id="module" type="text" size="30">
+                <span id="codeError" class="errorMessage"></span><!--Error text if user didn't input anything-->
+            </td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+             <!--Text area-->
+            <td>Message:</td>
+            <td><textarea
+                id="area"
+                cols="20"
+                rows="3"
+                placeholder="Hello 202204"
+                name="text"
+              ></textarea>
+              <span id="areaError" class="errorMessage"></span>
+            </td>
+        </tr>
+        <tr>
+            <!--Find-->
+            <td>Find:</td>
+            <td><input type="text" id="find" onkeyup="enable(this)"></td>
+        </tr>
+        <tr>
+            <!--Replace-->
+            <td>Replace:</td>
+            <td><input type="text" id="replace" disabled="disabled"></td>
+        </tr>
+        <tr>
+            <!--Find and replace button-->
+            <td></td>
+            <td> <button type="button" onclick="findR()">Find and Replace</button>
+                <span id="noFR" class="errorMessage"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <!--Source Langauge-->
+            <td>Source Langauge</td>
+            <td>
+                <select name="sl">
+                    <option value="en" selected>English</option>
+                    <option value="ms">Malay</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <!--Target Language-->
+            <td>Target Langauge</td>
+            <td>
+                <input type="radio" value="ja" name="tl" checked="checked">Japanese
+                <input type="radio" value="en" name="tl">English
+                <input type="radio" value="zh-CN" name="tl">Chinese
+                <input type="radio" value="ms" name="tl">Malay
+                <input type="radio" value="ko" name="tl">Korean
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>    
+                <input type="submit" value="Translate"  >
+                <input type="reset" value="Reset form">
+            </td>
+        </tr>
+    </table>
+    <br><br>
+</form>
+
+<script>
+    // Validating user's inputs
+    function validate(){
+
+        // Selecting the name textbox
+        var name = document.getElementById("name").value;
+        // Selecting the module textbox
+        var mCode = document.getElementById("module").value;
+        // Selecting the text area
+        var text = document.getElementById("area").value;
+
+        // Checking if name if filled out
+        if(name == null || name.trim() == ""){  
+            document.getElementById("nameError").innerHTML = "Name must be filled out";
+            return false;
+        } else if (/^[a-zA-Z0-9]+$/.test(name) == false){
+            document.getElementById("nameError").innerHTML = "No special characters";
+            return false;
+        }
+        else {
+            document.getElementById("nameError").innerHTML = "";
+            document.getElementById("name").value = name.trim();
+            alert("name");
+        }
+
+        // Checking if module code is filled out
+        if(mCode == null || mCode.trim() == ""){
+            document.getElementById("codeError").innerHTML = "      ";
+            return true;
+        } else if (/^[a-z]{3}[0-9]{4}$/.test(mCode) == false){
+            document.getElementById("codeError").innerHTML = "3 lower case alphabets and 4 digits";
+            return false;
+        } 
+        else {
+            document.getElementById("codeError").innerHTML = "";
+            document.getElementById("module").value = mCode.trim();
+            alert("mCode");
+        }
+
+        // Checking if message is filled out
+        if(text == "" || text.trim() == ""){
+            document.getElementById("areaError").innerHTML = "Text area must be filled out";
+            return false;
+        } else{
+            document.getElementById("areaError").innerHTML = "";
+            document.getElementById("area").value = text.trim();
+            alert("HELOOO");
+        }
+        return true;
+    }
+
+    // Months for Date
+    var monthNames = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      // Days for Date
+      var dayNames = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursay",
+        "Friday",
+        "Saturday",
+      ];
+
+      // Showing date in day/date/year day 12hr format
+      var today = new Date();   
+      var date =
+        today.getDate() +
+        " " +
+        monthNames[today.getMonth()] +
+        " " +
+        today.getFullYear() +
+        " " +
+        dayNames[today.getDay()] +
+        " " +
+        new Intl.DateTimeFormat("default", {
+          hour12: true,
+          hour: "numeric",
+          minute: "numeric",
+        }).format(today);
+      document.getElementById("currentDate").value = date;
+
+      
+      // Checking if there is input in find text box
+      function enable(find){
+        var replacee = document.getElementById("replace");
+
+        if (find.value.trim() != ""){
+            replacee.disabled = false;
+        } else{
+            replacee.disabled = true;
+        }
+      }
+
+      function findR(){
+        var count = 0;
+        // Selecting the text area
+        var areaa = document.getElementById("area").value;
+        // Selecting the find textbox
+        var findd = document.getElementById("find").value;
+        // Selecting the replace textbox
+        var replacee = document.getElementById("replace").value;
+
+        areaa = areaa.replaceAll(findd, function() {
+          // will be called if "find" gets found
+          count++;
+          return replacee; // return will replace "replace" with "1"
+        });
+
+        document.getElementById("area").value = areaa;
+        document.getElementById("noFR").innerHTML = "Number of replacement(s): " + count;
+      }
+</script>
+</body>
+
+</html>
